@@ -1,18 +1,36 @@
-// script.js
-function clearDisplay() {
-    document.getElementById('display').value = '';
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-function appendToDisplay(value) {
-    document.getElementById('display').value += value;
+.game-container {
+    position: relative;
+    text-align: center;
 }
 
-function calculate() {
-    let result = eval(document.getElementById('display').value);
-    document.getElementById('display').value = result;
+#gameCanvas {
+    background-color: #000;
+    border: 2px solid #555;
 }
 
-function backspace() {
-    let currentDisplay = document.getElementById('display').value;
-    document.getElementById('display').value = currentDisplay.slice(0, -1);
+#lives, #score {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    top: 10px;
+}
+
+#lives {
+    left: 10px;
+}
+
+#score {
+    right: 10px;
 }
