@@ -1,16 +1,36 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
 
-.calculator {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0
+.game-container {
+    position: relative;
+    text-align: center;
+}
+
+#gameCanvas {
+    background-color: #000;
+    border: 2px solid #555;
+}
+
+#lives, #score {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    top: 10px;
+}
+
+#lives {
+    left: 10px;
+}
+
+#score {
+    right: 10px;
+}
